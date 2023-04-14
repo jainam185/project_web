@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shipwreck Search Form</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Shipwreck Search Form</h1>
+    <form action="/api/search" method="POST">
+      <label for="page">Page:</label>
+      <input type="number" id="page" name="page" min="1" value="1"><br>
+      <label for="perPage">Per Page:</label>
+      <input type="number" id="perPage" name="perPage" min="1" value="5"><br>
+      <label for="depth">Depth:</label>
+      <input type="number" id="depth" name="depth" min="1"><br>
+      <input type="submit" value="Search">
+    </form>
+  </body>
+</html>
